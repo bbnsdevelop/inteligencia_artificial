@@ -1,8 +1,12 @@
 package ambiente;
 
+import agente.AgenteLabirinto;
+import geral.PosicaoXY;
+
 public class Labirinto {
 	private int tamanholabirinto;
 	private String[][] labirinto;
+	private AgenteLabirinto agente;
 	
 	
 	/* valores
@@ -38,6 +42,23 @@ public class Labirinto {
 
 	public int getTamanho() {		
 		return this.tamanholabirinto;
+	}
+
+
+	public String retornarValorPosicaoLabirinto(PosicaoXY posicao) {		
+		return this.labirinto[posicao.getPosiX()][posicao.getPosiY()];
+	}
+
+
+	public void setAgente(AgenteLabirinto agente) {
+		this.agente = agente;
+		
+	}
+
+
+	public void limpar() {		
+		PosicaoXY posicao = this.agente.getPosicao();
+		this.labirinto[posicao.getPosiX()][posicao.getPosiY()] = "L";
 	}
 	
 }
