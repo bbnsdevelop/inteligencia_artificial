@@ -8,10 +8,10 @@ public class InteligenciaArtificial {
 
 	public static void main(String[] args) {
 		
-		Labirinto labirinto = new Labirinto(4);
+		Labirinto labirinto = new Labirinto(6);
 		labirinto.exibirLabirinto();
 		AgenteLabirinto agente = new AgenteLabirinto(labirinto);
-		agente.setPosicao(new PosicaoXY(0,0));
+		agente.setPosicao(new PosicaoXY(4,4));
 		while (agente.isAindaLimpando()) {
 			agente.zerarPilha();
 			agente.movimentar();
