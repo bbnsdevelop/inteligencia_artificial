@@ -2,6 +2,7 @@ package inteligencialArtificial_Buscas.principal;
 
 import java.util.Stack;
 
+import inteligencialArtificial_Buscas.buscas.BuscaEmProfundidade;
 import inteligencialArtificial_Buscas.nos.No;
 
 public class Buscas {
@@ -38,5 +39,7 @@ public class Buscas {
 		
 		System.out.println(pilha.pop());*/
 		
+		BuscaEmProfundidade bep = new BuscaEmProfundidade(6);
+		bep.buscar(noZero);
 	}
 }
