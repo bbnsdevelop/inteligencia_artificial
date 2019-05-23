@@ -1,31 +1,33 @@
 package geral;
 
 public class PosicaoXY {
-	
-	private int posiX;
-	private int posiY;
-	
-	
+
+	private int posX;
+	private int posY;
 	
 	public PosicaoXY() {
-		this.posiX = 0;
-		this.posiY = 0;
+		this.posX = 0;
+		this.posY = 0;
 	}
-	public PosicaoXY(int posiX, int posiY) {
-		this.posiX = posiX;
-		this.posiY = posiY;
+	
+	public PosicaoXY(int posX, int posY) {
+		this.posX = posX;
+		this.posY = posY;
 	}
-	public int getPosiX() {
-		return posiX;
+
+	public int getPosX() {
+		return posX;
 	}
-	public void setPosiX(int posiX) {
-		this.posiX = posiX;
+	public void setPosX(int posX) {
+		this.posX = posX;
 	}
-	public int getPosiY() {
-		return posiY;
+	public int getPosY() {
+		return posY;
 	}
-	public void setPosiY(int posiY) {
-		this.posiY = posiY;
+	public void setPosY(int posY) {
+		this.posY = posY;
 	}
+	
+	
 	
 }
